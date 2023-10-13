@@ -1,8 +1,17 @@
+import OneTour from "../components/OneTour"
 
+const Tours = ({ tours, removeTours }) => {
 
-const Tours = () => {
   return (
-    <div>Tours</div>
+    <>
+        <h2>our tours</h2>
+        {tours.map((oneTour) => {
+            return (
+                <OneTour oneTour={oneTour} key={oneTour.id} removeTours={removeTours}/>
+            )    
+          })}
+    </>
+       
   )
 }
 
