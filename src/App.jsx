@@ -41,8 +41,12 @@ function App() {
 
   return (
     <>
-      <Tours tours={tours} removeTours={removeTours}/>
-      
+    {console.log(tours)}
+      {tours.length > 0 ? (
+        <Tours tours={tours} removeTours={removeTours}/>
+      ) : (
+        <button>X</button>
+      )}
     </>
   )
 }
