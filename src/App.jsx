@@ -39,14 +39,18 @@ function App() {
     </>
   }
 
+  if(tours.length === 0){
+    return (
+      <div>
+        <h2>no tours left</h2>
+        <button onClick={() => fetchTours()}>Refresh</button>
+      </div>
+    )
+  }
+
   return (
     <>
-    {console.log(tours)}
-      {tours.length > 0 ? (
-        <Tours tours={tours} removeTours={removeTours}/>
-      ) : (
-        <button>X</button>
-      )}
+      <Tours tours={tours} removeTours={removeTours}/>
     </>
   )
 }
