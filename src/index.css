@@ -271,7 +271,7 @@ main {
   transition: var(--transition);
   /* for tour price */
   position: relative;
-  height: 44rem;
+  min-height: 44rem;
 }
 .single-tour:hover {
   box-shadow: var(--shadow-3);
