@@ -1,5 +1,27 @@
-*{ 
+*,
+::after,
+::before { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+
+
+/* Loading  */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid rgb(100, 99, 99);
+  border-radius: 50%;
+  border-top-color: rgb(105, 234, 105);
+  animation: spinner 0.9s linear infinite;
+  margin: 0 auto;
 }
