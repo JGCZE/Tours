@@ -1,5 +1,5 @@
 # About
-<strong> Live demo: </strong> <a href="https://www.google.com/">google</a>
+### > <a href="https://comfy-croquembouche-3ff473.netlify.app">Live demo</a>
 
 Simple project with API and React frontend. It's a simple app to show tours and possibility to remove them from the list. There is a three components in the project: Tours, Tour and Loading. Main component is responsible for fetching data from API and passing it to Tour and OneTour component. Tours component is responsible for displaying data and removing tour from the list. Loading component is responsible for displaying loading animation when data is fetching. I used useEffect, conditional rendering and useState.
 
